@@ -1,3 +1,5 @@
+import evProjectImg from "./ev_project_img.png"; // use relative path with "./";
+
 export const myProjects = [
   {
     id: "1",
@@ -7,7 +9,7 @@ export const myProjects = [
     output: "Interactive dashboard for city planners.",
     skills: ["React", "TypeScript", "Python", "Data Visualization"],
     deliverables: ["Web app", "Documentation", "Deployment scripts"],
-    images: ["evproject.JPG"]
+    images: [evProjectImg]
   },
   // Add more projects as needed
 ];
