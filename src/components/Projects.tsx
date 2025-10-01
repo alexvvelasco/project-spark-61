@@ -9,8 +9,10 @@ const Projects = () => (
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
           <p className="mb-1"><strong>Role:</strong> Sole contributor</p>
           <p className="mb-1"><strong>Description:</strong>
-        · Developed a geospatial analytics framework to identify underserved, high-demand urban zones by integrating POI density, population distribution, and existing charging infrastructure within multi-radius catchment areas.
-        · Built a predictive modeling pipeline to estimate total energy demand for new charging sites.
+        · Developed a geospatial analytics framework to identify underserved, high-demand urban zones by integrating POI density, population distribution, and existing charging infrastructure within multi-radius catchment areas.</p>
+          <p className="mb-1">
+        · Built a predictive modeling pipeline to estimate total energy demand for new charging sites.</p>
+          <p className="mb-1">
         · Designed an investment evaluation module to compute ROI timelines and guide optimal capital deployment. </p>
           <p className="mb-1"><strong>Output:</strong>
             Given the coordinates of new site, charger type, number of chargers and square meter area to purchase, model have in account:
