@@ -31,7 +31,7 @@ const Projects = () => (
             </p>
           <div className="flex space-x-2 mt-2">
             {project.images.map((img, idx) => (
-              <img key={idx} src={img} alt={project.title} className="w-24 h-24 object-cover rounded" />
+              <img key={idx} src={img} alt={project.title} className="w-50 h-30 object-cover rounded" />
             ))}
           </div>
         </div>

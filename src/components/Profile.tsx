@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import presentationImg from "./presentationimg.png";
+import presentationImg from "./presentationimgbg.png";
 
 const Profile = () => (
   <section className="container mx-auto py-8 px-4">
