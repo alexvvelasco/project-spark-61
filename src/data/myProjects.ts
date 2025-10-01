@@ -7,7 +7,7 @@ export const myProjects = [
     output: "Interactive dashboard for city planners.",
     skills: ["React", "TypeScript", "Python", "Data Visualization"],
     deliverables: ["Web app", "Documentation", "Deployment scripts"],
-    images: ["/images/ev-dashboard.png"]
+    images: ["evproject.JPG"]
   },
   // Add more projects as needed
 ];
