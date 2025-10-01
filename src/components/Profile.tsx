@@ -30,15 +30,15 @@ const Profile = () => (
     <div className="mt-8">
       <h2 className="text-3xl font-bold mb-2 text-left">Skills</h2>
       <p className="text-lg mb-4 text-left">
-        - Programming: Python · SQL · Bash · Git · Jupyter<br />
-        - Data Wrangling & Preprocessing: Data Cleaning · Feature Engineering · EDA<br />
-        - Visualization: Matplotlib · Seaborn · Plotly · Streamlit<br />
-        - Machine Learning: Scikit-Learn · XGBoost · Random Forest · Decision Trees<br />
-        - Deep Learning: Tensorflow · Keras · CNN · RNN · LSTM · Transfer Learning<br />
-        - NLP: Tokenization · Embeddings · Text Classification<br />
-        - Spatial Analytics: Geopandas · Folium · Spatial Data Analysis<br />
-        - Cloud & Deployment: AWS · Docker · CI/CD<br />
-        - Soft Skills: Problem-Solving · Communication · Team Collaboration · Adaptability
+        - <strong>Programming:</strong> Python · SQL · Bash · Git · Jupyter<br />
+        - <strong>Data Wrangling & Preprocessing:</strong> Data Cleaning · Feature Engineering · EDA<br />
+        - <strong>Visualization:</strong> Matplotlib · Seaborn · Plotly · Streamlit<br />
+        - <strong>Machine Learning:</strong> Machine Learning: Scikit-Learn · XGBoost · Random Forest · Decision Trees<br />
+        - <strong>Deep Learning:</strong> Deep Learning: Tensorflow · Keras · CNN · RNN · LSTM · Transfer Learning<br />
+        - <strong>NLP:</strong> Tokenization · Embeddings · Text Classification<br />
+        - <strong>Spatial Analytics:</strong> Geopandas · Folium · Spatial Data Analysis<br />
+        - <strong>Cloud & Deployment::</strong> AWS · Docker · CI/CD<br />
+        - <strong>Soft Skills:</strong> Problem-Solving · Communication · Team Collaboration · Adaptability
       </p>
     </div>
   </section>
