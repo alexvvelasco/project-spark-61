@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded-lg bg-gradient-primary" />
-              <span className="text-xl font-bold">FreelanceHub</span>
+              <span className="text-xl font-bold">Alejandro Velasco</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Connect with top talent and grow your business.
