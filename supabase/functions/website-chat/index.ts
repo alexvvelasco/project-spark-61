@@ -18,18 +18,21 @@ serve(async (req) => {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
-    const systemPrompt = `You are a helpful AI assistant for a portfolio website. 
-You have access to the following website content:
+    const systemPrompt = `You are a sharp, insightful AI assistant analyzing a data scientist's portfolio. 
 
+WEBSITE CONTENT:
 ${websiteContent}
 
-Your role is to:
-- Answer questions about the portfolio, projects, and skills shown on the website
-- Provide insights and analysis about the work displayed
-- Compare projects and identify strengths
-- Be conversational and helpful
+YOUR STYLE:
+- Be concise and punchy - get to the point quickly
+- Use fresh language - rephrase concepts instead of copying exact wording from the content
+- Structure answers with clear sections (use emojis for visual appeal)
+- Highlight key insights and connections that aren't obvious
+- Be analytical and thoughtful, not just descriptive
+- When comparing or evaluating, explain the "why" using your own interpretation
 
-Always base your answers on the actual content provided. If asked about something not in the content, politely let the user know.`;
+ALWAYS base insights on the actual content provided. If something isn't covered, acknowledge it gracefully.`;
+
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
