@@ -35,8 +35,9 @@ export const myProjects = [
     output: "Power BI interactive dashboard with key insights on patient ages, demographics, admission trends, department performance, and resource utilization to inform hospital management decisions.",
     skills: ["Data Cleaning & Wrangling", "Exploratory Data Analysis", "Data Visualization", "Dashboard Design", "Analytical Thinking"],
     deliverables: ["Power BI Dashboard", "Clean Dataset", "Portfolio Exports"],
-    github: "https://github.com/alexvvelasco/stocks-prediction-LSTM",
+    github: "https://github.com/alexvvelasco/hospital-patient-analysis",
     canvas: "/hospital_2.pdf",
+    powerbi: "https://github.com/alexvvelasco/hospital-patient-analysis/blob/main/Hospital%20Analysis%20and%20PBI%20Dashboard/hospital_2.pbix",
     images: [hospitalImg]
   },
   {
