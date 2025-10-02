@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { MessageCircle, X, Send } from "lucide-react";
+import { X, Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
+import aiChatbotImage from "@/assets/ai-chatbot.png";
 
 interface Message {
   role: "user" | "assistant";
@@ -125,13 +126,18 @@ Deliverables:
   return (
     <>
       {!isOpen && (
-        <Button
-          onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 rounded-full w-14 h-14 shadow-lg"
-          size="icon"
-        >
-          <MessageCircle className="h-6 w-6" />
-        </Button>
+        <div className="fixed bottom-6 right-6 flex flex-col items-center gap-2">
+          <p className="text-sm font-medium text-foreground bg-background px-3 py-1 rounded-lg shadow-md">
+            Any questions? Chat with AI!
+          </p>
+          <Button
+            onClick={() => setIsOpen(true)}
+            className="rounded-full w-16 h-16 shadow-lg p-0 overflow-hidden"
+            size="icon"
+          >
+            <img src={aiChatbotImage} alt="AI Chatbot" className="w-full h-full object-cover" />
+          </Button>
+        </div>
       )}
 
       {isOpen && (
