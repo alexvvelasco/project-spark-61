@@ -11,6 +11,16 @@ interface Message {
   content: string;
 }
 
+const parseMarkdown = (text: string) => {
+  // Parse bold **text**
+  let parsed = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  // Parse italic *text*
+  parsed = parsed.replace(/\*(.*?)\*/g, '<em>$1</em>');
+  // Parse line breaks
+  parsed = parsed.replace(/\n/g, '<br />');
+  return parsed;
+};
+
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -156,7 +166,10 @@ Deliverables:
                       : "bg-muted"
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
+                  <div 
+                    className="text-sm"
+                    dangerouslySetInnerHTML={{ __html: parseMarkdown(msg.content) }}
+                  />
                 </div>
               </div>
             ))}
