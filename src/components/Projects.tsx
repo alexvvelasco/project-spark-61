@@ -103,9 +103,6 @@ const Projects = () => (
         <p className="mb-1">
              Regression: you can train on a GridSeach to find the best hyperparameters for GradientBoostingRegressor to predict how many useful life days left.
         </p>
-        <p className="mb-1">
-          · Return of investment
-        </p>
         <div className="flex space-x-2 mt-2">
           {myProjects[1].images.map((img, idx) => (
             <img key={idx} src={img} alt={myProjects[1].title} className="w-40 h-40 object-cover rounded" />
