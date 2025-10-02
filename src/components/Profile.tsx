@@ -37,7 +37,7 @@ const Profile = () => (
         - <strong>Deep Learning:</strong> Deep Learning: Tensorflow · Keras · CNN · RNN · LSTM · Transfer Learning<br />
         - <strong>NLP:</strong> Tokenization · Embeddings · Text Classification<br />
         - <strong>Spatial Analytics:</strong> Geopandas · Folium · Spatial Data Analysis<br />
-        - <strong>Cloud & Deployment::</strong> AWS · Docker · CI/CD<br />
+        - <strong>Cloud & Deployment:</strong> AWS · Docker · CI/CD<br />
         - <strong>Soft Skills:</strong> Problem-Solving · Communication · Team Collaboration · Adaptability
       </p>
     </div>
