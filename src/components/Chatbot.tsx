@@ -32,7 +32,7 @@ const Chatbot = () => {
   const getWebsiteContent = () => {
     return `
 ABOUT:
-I am a Data Scientist and Machine Learning Engineer with a strong passion for transforming raw data into actionable insights and building intelligent systems that drive real-world impact. My journey in the data science field has been fueled by curiosity, a commitment to continuous learning, and a desire to solve complex problems through innovative approaches.
+I am Alejandro Velasco, a Data Scientist, Machine Learning Engineer & AI Engineer who transitioned from 6 years in Hospitality Operations to Data-Driven Problem Solving. I have experience in Human Flow & Efficiency Analytics and am skilled in Python, Machine Learning, Deep Learning, Predictive Modeling, Spatial Analytics & ROI. I'm passionate about leveraging data for impactful solutions.
 
 EDUCATION:
 - Master's Degree in Data Science and Business Analytics
@@ -54,30 +54,42 @@ SKILLS:
 
 PROJECTS:
 
-Project: EV Charging Analytics Platform
-Role: Sole contributor
-Description:
-· Developed a geospatial analytics framework to identify underserved, high-demand urban zones by integrating POI density, population distribution, and existing charging infrastructure within multi-radius catchment areas.
-· Built a predictive modeling pipeline to estimate total energy demand for new charging sites.
-· Designed an investment evaluation module to compute ROI timelines and guide optimal capital deployment.
+Project 1: EV Charging Analytics Platform
+Role: Lead Developer
+Description: Developed a web app to analyze EV charging station locations and usage.
+Output: Interactive dashboard for city planners.
+Skills: React, TypeScript, Python, Data Visualization
+Deliverables: Web app, Documentation, Deployment scripts
+GitHub: https://github.com/alexvvelasco/EV-Charging-Station---Shenzhen-China
+Portfolio: https://alejandroproject.my.canva.site/
 
-Output:
-Given the coordinates of new site, charger type, number of chargers and square meter area to purchase, model have in account:
-Population and number of stations in that area, distance to nearby stations and their performance, Point of Interest (POI) nearby, land price, charger type price, hardware cost, miscellaneous costs and contingency to calculate: total investment, new site performance and ROI
+Project 2: Anomaly Detection | AI-driven Predictive Maintenance System
+Role: Data Scientist
+Description: Developed an AI-driven predictive maintenance system for industrial machines.
+Output: Given the machine sensor data, model detects anomalies (classification task) & life prediction (regression task) on daily machine behavior records.
+Skills: Exploratory Data Analysis, Feature Engineering, Machine Learning Modeling, Predictive Analytics, Explainable AI, Google Cloud Platform, Streamlit
+Deliverables: 
+- Interactive web dashboard
+- Classification: you can train on a GridSeach to find the best hyperparameters for XGBoostClassifier and RandomForestClassifier to predict if your machine will fail in the next 7 days.
+- Regression: you can train on a GridSeach to find the best hyperparameters for GradientBoostingRegressor to predict how many useful life days left.
+GitHub: https://github.com/alexvvelasco/anomaly-detector-project/tree/alex
+Portfolio: https://alejandroproject.my.canva.site/anomaly-detection-ai-driven-predictive-maintenance-system
 
-Skills:
-· Exploratory Data Analysis
-· Spatial Analysis
-· Machine Learning Modeling
-· Predictive Analytics
-· K-Neighbors
-· Investment Strategy
+Project 3: Data Analysis, KPI & Power BI Dashboard
+Role: Data Analyst
+Description: Analyze hospital case records to uncover patterns in patient demographics and operations.
+Output: Power BI interactive dashboard with key insights on patient ages, demographics, admission trends, department performance, and resource utilization to inform hospital management decisions.
+Skills: Data Cleaning & Wrangling, Exploratory Data Analysis, Data Visualization, Dashboard Design, Analytical Thinking
+Deliverables: Power BI Dashboard, Clean Dataset, Portfolio Exports
+GitHub: https://github.com/alexvvelasco/stocks-prediction-LSTM
 
-Deliverables:
-· Interactive web dashboard for finding optimal locations
-· Predictive model for site performance
-· Investment costs
-· Return of investment
+Project 4: Stock Price Forecasting Using LSTM
+Role: Sole Contributor / ML Engineer
+Description: Designed and implemented a deep learning model to forecast stock prices using historical market data, technical indicators, and optional news sentiment. The model leverages a sequence-to-sequence LSTM architecture to predict future stock prices and expected returns using an autoregressive Monte Carlo approach.
+Output: Power BI interactive dashboard with key insights on patient ages, demographics, admission trends, department performance, and resource utilization to inform hospital management decisions.
+Skills: Time Series Forecasting, Deep Learning, NLP / Sentiment Analysis, Monte Carlo Simulation
+Deliverables: Predicted future prices and returns for a specified target ticker, Reusable pipeline
+GitHub: https://github.com/alexvvelasco/stocks-prediction-LSTM
 `;
   };
 
