@@ -44,7 +44,7 @@ const Projects = () => (
         </p>
         <div className="flex space-x-2 mt-2">
           {myProjects[0].images.map((img, idx) => (
-            <img key={idx} src={img} alt={myProjects[0].title} className="w-50 h-30 object-cover rounded" />
+            <img key={idx} src={img} alt={myProjects[0].title} className="w-45 h-25 object-cover rounded" />
           ))}
         </div>
         <div className="mt-4 flex space-x-4">
@@ -105,7 +105,7 @@ const Projects = () => (
         </p>
         <div className="flex space-x-2 mt-2">
           {myProjects[1].images.map((img, idx) => (
-            <img key={idx} src={img} alt={myProjects[1].title} className="w-50 h-30 object-cover rounded" />
+            <img key={idx} src={img} alt={myProjects[1].title} className="w-45 h-25 object-cover rounded" />
           ))}
         </div>
         <div className="mt-4 flex space-x-4">
@@ -163,7 +163,7 @@ const Projects = () => (
 
         <div className="flex space-x-2 mt-2">
           {myProjects[2].images.map((img, idx) => (
-            <img key={idx} src={img} alt={myProjects[1].title} className="w-50 h-30 object-cover rounded" />
+            <img key={idx} src={img} alt={myProjects[1].title} className="w-45 h-25 object-cover rounded" />
           ))}
         </div>
         <div className="mt-4 flex space-x-4">
