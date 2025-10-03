@@ -3,7 +3,7 @@ import { myProjects } from "../data/myProjects";
 const Projects = () => (
   <section id="projects" className="container mx-auto py-8 px-4">
     <h2 className="text-2xl font-bold mb-6">Projects</h2>
-    <div className="grid gap-8 md:grid-cols-2">
+    <div className="grid gap-8 md:grid-cols-1">
       {/* First Project */}
       <div className="border rounded-lg p-4 shadow">
         <h3 className="text-xl font-semibold mb-2">EV Charging Analytics Platform</h3>
@@ -216,7 +216,7 @@ const Projects = () => (
           Producing multi-step predictions of future prices and expected returns.</p>
         <p className="mb-1"><strong>Skills:</strong></p>
         <p className="mb-1">
-          Data Processing & Feature Engineering · Time Series Forecasting · Deep Learning · NLP · Sentiment Analysis · Monte Carlo Simulation
+          Data Processing & Feature Engineering · Time Series Forecasting · Deep Learning · Sentiment Analysis · NLP · Monte Carlo Simulation
         </p>
         <p className="mb-1"><strong>Deliverables:</strong></p>
         <p className="mb-1">
