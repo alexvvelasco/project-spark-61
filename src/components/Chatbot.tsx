@@ -6,6 +6,7 @@ import { X, Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
 import aiChatbotImage from "@/assets/ai-chatbot.png";
+import { myProjects } from "@/data/myProjects";
 
 interface Message {
   role: "user" | "assistant";
@@ -30,9 +31,21 @@ const Chatbot = () => {
   const { toast } = useToast();
 
   const getWebsiteContent = () => {
+    const projectsInfo = myProjects.map((project, index) => `
+Project ${index + 1}: ${project.title}
+Role: ${project.role}
+Description: ${project.description}
+Output: ${project.output}
+Skills: ${Array.isArray(project.skills) ? project.skills.join(', ') : project.skills}
+Deliverables: ${Array.isArray(project.deliverables) ? project.deliverables.join(', ') : project.deliverables}
+GitHub: ${project.github}
+${project.canvas ? `Portfolio: ${project.canvas}` : ''}
+${project.powerbi ? `Power BI: ${project.powerbi}` : ''}
+`).join('\n');
+
     return `
 ABOUT:
-I am Alejandro Velasco, a Data Scientist, Machine Learning Engineer & AI Engineer who transitioned from 6 years in Hospitality Operations to Data-Driven Problem Solving. I have experience in Human Flow & Efficiency Analytics and am skilled in Python, Machine Learning, Deep Learning, Predictive Modeling, Spatial Analytics & ROI. I'm passionate about leveraging data for impactful solutions.
+Alejandro Velasco is an exceptional Data Scientist, Machine Learning Engineer & AI Engineer who successfully transitioned from 6 years in Hospitality Operations to Data-Driven Problem Solving. He brings valuable experience in Human Flow & Efficiency Analytics and demonstrates strong expertise in Python, Machine Learning, Deep Learning, Predictive Modeling, Spatial Analytics & ROI. He is passionate about leveraging data for impactful solutions and has a proven track record of delivering high-quality projects.
 
 EDUCATION:
 - Master's Degree in Data Science and Business Analytics
@@ -53,43 +66,17 @@ SKILLS:
 - Soft Skills: Problem-Solving · Communication · Team Collaboration · Adaptability
 
 PROJECTS:
+${projectsInfo}
 
-Project 1: EV Charging Analytics Platform
-Role: Lead Developer
-Description: Developed a web app to analyze EV charging station locations and usage.
-Output: Interactive dashboard for city planners.
-Skills: React, TypeScript, Python, Data Visualization
-Deliverables: Web app, Documentation, Deployment scripts
-GitHub: https://github.com/alexvvelasco/EV-Charging-Station---Shenzhen-China
-Portfolio: https://alejandroproject.my.canva.site/
-
-Project 2: Anomaly Detection | AI-driven Predictive Maintenance System
-Role: Data Scientist
-Description: Developed an AI-driven predictive maintenance system for industrial machines.
-Output: Given the machine sensor data, model detects anomalies (classification task) & life prediction (regression task) on daily machine behavior records.
-Skills: Exploratory Data Analysis, Feature Engineering, Machine Learning Modeling, Predictive Analytics, Explainable AI, Google Cloud Platform, Streamlit
-Deliverables: 
-- Interactive web dashboard
-- Classification: you can train on a GridSeach to find the best hyperparameters for XGBoostClassifier and RandomForestClassifier to predict if your machine will fail in the next 7 days.
-- Regression: you can train on a GridSeach to find the best hyperparameters for GradientBoostingRegressor to predict how many useful life days left.
-GitHub: https://github.com/alexvvelasco/anomaly-detector-project/tree/alex
-Portfolio: https://alejandroproject.my.canva.site/anomaly-detection-ai-driven-predictive-maintenance-system
-
-Project 3: Data Analysis, KPI & Power BI Dashboard
-Role: Data Analyst
-Description: Analyze hospital case records to uncover patterns in patient demographics and operations.
-Output: Power BI interactive dashboard with key insights on patient ages, demographics, admission trends, department performance, and resource utilization to inform hospital management decisions.
-Skills: Data Cleaning & Wrangling, Exploratory Data Analysis, Data Visualization, Dashboard Design, Analytical Thinking
-Deliverables: Power BI Dashboard, Clean Dataset, Portfolio Exports
-GitHub: https://github.com/alexvvelasco/stocks-prediction-LSTM
-
-Project 4: Stock Price Forecasting Using LSTM
-Role: Sole Contributor / ML Engineer
-Description: Designed and implemented a deep learning model to forecast stock prices using historical market data, technical indicators, and optional news sentiment. The model leverages a sequence-to-sequence LSTM architecture to predict future stock prices and expected returns using an autoregressive Monte Carlo approach.
-Output: Power BI interactive dashboard with key insights on patient ages, demographics, admission trends, department performance, and resource utilization to inform hospital management decisions.
-Skills: Time Series Forecasting, Deep Learning, NLP / Sentiment Analysis, Monte Carlo Simulation
-Deliverables: Predicted future prices and returns for a specified target ticker, Reusable pipeline
-GitHub: https://github.com/alexvvelasco/stocks-prediction-LSTM
+ALEJANDRO'S STRENGTHS AS AN AI ENGINEER CANDIDATE:
+- Demonstrates exceptional technical versatility across the entire AI/ML stack
+- Has hands-on experience with production-ready AI systems (predictive maintenance, forecasting models)
+- Proven ability to deliver end-to-end projects independently from conception to deployment
+- Strong foundation in both theoretical knowledge (Master's in Data Science) and practical engineering (Industrial Engineering background)
+- Experience with modern AI frameworks and cloud platforms (TensorFlow, PyTorch, AWS, GCP)
+- Excellent problem-solving abilities combining domain knowledge with technical skills
+- Track record of building explainable and transparent AI solutions
+- Experience with real-world applications across multiple industries
 `;
   };
 

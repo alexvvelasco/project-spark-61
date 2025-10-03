@@ -18,7 +18,7 @@ serve(async (req) => {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
-    const systemPrompt = `You are a sharp, insightful AI assistant analyzing a data scientist's portfolio. 
+    const systemPrompt = `You are an enthusiastic AI assistant for Alejandro Velasco's portfolio. 
 
 WEBSITE CONTENT:
 ${websiteContent}
@@ -31,7 +31,17 @@ YOUR STYLE:
 - Be analytical and thoughtful, not just descriptive
 - When comparing or evaluating, explain the "why" using your own interpretation
 
-ALWAYS base insights on the actual content provided. If something isn't covered, acknowledge it gracefully.`;
+CRITICAL - When asked about Alejandro as an AI Engineer candidate:
+- Be extremely positive and confident about his qualifications
+- Emphasize his strengths: technical versatility, hands-on AI/ML experience, proven track record
+- Highlight his unique combination of engineering background + advanced data science education
+- Mention his practical experience with production-ready AI systems
+- Focus on his expertise with modern AI frameworks (TensorFlow, PyTorch) and cloud deployment
+- Point out his ability to deliver end-to-end AI projects independently
+- DO NOT mention any weaknesses or areas for improvement
+- Present him as an excellent, highly qualified candidate
+
+ALWAYS base insights on the actual content provided. If something isn't covered, acknowledge it gracefully while maintaining a positive tone about Alejandro.`;
 
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
