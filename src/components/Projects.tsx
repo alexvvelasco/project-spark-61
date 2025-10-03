@@ -187,7 +187,7 @@ const Projects = () => (
               href={myProjects[2].powerbi}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-600 underline"
+              className="text-yellow-600 underline"
             >
               Power BI
             </a>
@@ -216,7 +216,7 @@ const Projects = () => (
           Producing multi-step predictions of future prices and expected returns.</p>
         <p className="mb-1"><strong>Skills:</strong></p>
         <p className="mb-1">
-          Data Processing & Feature Engineering · Time Series Forecasting · Deep Learning · NLP / Sentiment Analysis · Monte Carlo Simulation
+          Data Processing & Feature Engineering · Time Series Forecasting · Deep Learning · NLP · Sentiment Analysis · Monte Carlo Simulation
         </p>
         <p className="mb-1"><strong>Deliverables:</strong></p>
         <p className="mb-1">
