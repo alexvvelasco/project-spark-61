@@ -9,6 +9,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import PostProject from "./pages/PostProject";
 import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
+import EVChatbotPage from "./pages/EVChatbotPage";
 import Chatbot from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/post-project" element={<PostProject />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/ev-chatbot" element={<EVChatbotPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Chatbot />
