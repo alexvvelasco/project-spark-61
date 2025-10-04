@@ -67,54 +67,55 @@ export const EVChatbot = () => {
   };
 
   return (
-    <div className="flex flex-col h-full w-full">
-      <ScrollArea className="flex-1 p-6" ref={scrollRef}>
-        <div className="space-y-4">
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`flex gap-3 ${
-                message.role === 'user' ? 'justify-end' : 'justify-start'
-              }`}
-            >
-              {message.role === 'assistant' && (
+    <div className="flex flex-col min-h-screen w-full bg-background">
+      <div className="flex-1 flex items-center justify-center">
+        <ScrollArea className="w-full max-w-2xl p-6">
+          <div className="space-y-4">
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={`flex gap-3 ${
+                  message.role === 'user' ? 'justify-end' : 'justify-start'
+                }`}
+              >
+                {message.role === 'assistant' && (
+                  <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
+                    <Bot className="h-4 w-4" />
+                  </div>
+                )}
+                <div
+                  className={`rounded-lg px-4 py-2 max-w-[80%] ${
+                    message.role === 'user'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-muted'
+                  }`}
+                >
+                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                </div>
+                {message.role === 'user' && (
+                  <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
+                    <User className="h-4 w-4" />
+                  </div>
+                )}
+              </div>
+            ))}
+            {isLoading && (
+              <div className="flex gap-3 justify-start">
                 <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <Bot className="h-4 w-4" />
                 </div>
-              )}
-              <div
-                className={`rounded-lg px-4 py-2 max-w-[80%] ${
-                  message.role === 'user'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-muted'
-                }`}
-              >
-                <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-              </div>
-              {message.role === 'user' && (
-                <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
-                  <User className="h-4 w-4" />
-                </div>
-              )}
-            </div>
-          ))}
-          {isLoading && (
-            <div className="flex gap-3 justify-start">
-              <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
-                <Bot className="h-4 w-4" />
-              </div>
-              <div className="rounded-lg px-4 py-2 bg-muted">
-                <div className="flex gap-1">
-                  <div className="w-2 h-2 rounded-full bg-foreground/60 animate-bounce [animation-delay:-0.3s]"></div>
-                  <div className="w-2 h-2 rounded-full bg-foreground/60 animate-bounce [animation-delay:-0.15s]"></div>
-                  <div className="w-2 h-2 rounded-full bg-foreground/60 animate-bounce"></div>
+                <div className="rounded-lg px-4 py-2 bg-muted">
+                  <div className="flex gap-1">
+                    <div className="w-2 h-2 rounded-full bg-foreground/60 animate-bounce [animation-delay:-0.3s]"></div>
+                    <div className="w-2 h-2 rounded-full bg-foreground/60 animate-bounce [animation-delay:-0.15s]"></div>
+                    <div className="w-2 h-2 rounded-full bg-foreground/60 animate-bounce"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
-      </ScrollArea>
-
+            )}
+          </div>
+        </ScrollArea>
+      </div>
       <div className="p-6 border-t bg-background">
         <div className="flex gap-2 max-w-4xl mx-auto">
           <Input
