@@ -1,0 +1,3 @@
+[submodule "ev_charging_app"]
+	path = ev_charging_app
+	url = https://github.com/alexvvelasco/EV-Charging-Station---Shenzhen-China.git
