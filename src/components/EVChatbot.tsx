@@ -176,7 +176,7 @@ export const EVChatbot = () => {
             </div>
           </ScrollArea>
         </div>
-        
+
         {/* Input Section */}
         <div className="p-6 border-t bg-background">
           <div className="flex gap-2 max-w-4xl mx-auto">
@@ -184,7 +184,7 @@ export const EVChatbot = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Chat with AI"
+            placeholder=""
             disabled={isLoading}
             className="flex-1"
           />
