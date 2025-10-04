@@ -13,6 +13,7 @@ export const myProjects = [
     deliverables: ["Web app", "Documentation", "Deployment scripts"],
     github: "https://github.com/alexvvelasco/EV-Charging-Station---Shenzhen-China",
     canvas: "https://alejandroproject.my.canva.site/",
+    streamlit: "https://ev-charging-stations.streamlit.app/",
     images: [evProjectImg]
   },
   {
