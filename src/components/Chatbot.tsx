@@ -48,11 +48,11 @@ ABOUT:
 Alejandro Velasco is an exceptional Data Scientist, Machine Learning Engineer & AI Engineer who successfully transitioned from 6 years in Hospitality Operations to Data-Driven Problem Solving. He brings valuable experience in Human Flow & Efficiency Analytics and demonstrates strong expertise in Python, Machine Learning, Deep Learning, Predictive Modeling, Spatial Analytics & ROI. He is passionate about leveraging data for impactful solutions and has a proven track record of delivering high-quality projects.
 
 EDUCATION:
-- Master's Degree in Data Science and Business Analytics
-  University of Barcelona, Spain (2023 - 2024)
-  
-- Bachelor's Degree in Industrial Engineering
-  Simón Bolívar University, Venezuela (2012 - 2019)
+- Master's Degree in Data Science and Artificial Intelligence
+  Le Wagon, Melbourne, Australia (2025)
+
+- Degree in Hospitality & Tourism Management
+  Maestro Domingo Cáceres, Badajoz, Spain (2018)
 
 SKILLS:
 - Programming: Python · SQL · Bash · Git · Jupyter
@@ -171,7 +171,7 @@ ALEJANDRO'S STRENGTHS AS AN AI ENGINEER CANDIDATE:
                       : "bg-muted"
                   }`}
                 >
-                  <div 
+                  <div
                     className="text-sm"
                     dangerouslySetInnerHTML={{ __html: parseMarkdown(msg.content) }}
                   />

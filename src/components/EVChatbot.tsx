@@ -9,7 +9,15 @@ interface Message {
   role: 'user' | 'assistant';
   content: string;
 }
-
+const parseMarkdown = (text: string) => {
+  // Parse bold **text**
+  let parsed = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  // Parse italic *text*
+  parsed = parsed.replace(/\*(.*?)\*/g, '<em>$1</em>');
+  // Parse line breaks
+  parsed = parsed.replace(/\n/g, '<br />');
+  return parsed;
+};
 export const EVChatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -184,7 +192,7 @@ export const EVChatbot = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder=""
+            placeholder="Chat with AI"
             disabled={isLoading}
             className="flex-1"
           />
