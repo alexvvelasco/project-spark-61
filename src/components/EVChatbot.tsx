@@ -158,7 +158,10 @@ export const EVChatbot = () => {
                       : 'bg-muted'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  <div
+                    className="text-sm"
+                    dangerouslySetInnerHTML={{ __html: parseMarkdown(message.content) }}
+                  />
                 </div>
                 {message.role === 'user' && (
                   <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
