@@ -79,6 +79,15 @@ export const EVChatbot = () => {
       {/* Header Section */}
       <div className="w-full py-12 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Custom Header */}
+          <div className="md:col-span-3 text-center mb-8">
+            <h1 className="text-3xl font-bold text-blue-400 mb-2">
+              AI-powered bot to help you find best locations
+            </h1>
+            <p className="text-base text-black">
+              scroll down to chat with AI
+            </p>
+          </div>
           {/* Feature Cards */}
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 rounded-lg bg-card border hover:border-primary/50 transition-colors">
@@ -88,7 +97,6 @@ export const EVChatbot = () => {
                 Get AI-powered location suggestions based on KNN modeling and district analysis
               </p>
             </div>
-
             <div className="p-6 rounded-lg bg-card border hover:border-primary/50 transition-colors">
               <div className="text-3xl mb-3">💰</div>
               <h3 className="font-semibold mb-2">ROI Analysis</h3>
@@ -96,7 +104,6 @@ export const EVChatbot = () => {
                 Calculate investment costs and months to break-even for any location
               </p>
             </div>
-
             <div className="p-6 rounded-lg bg-card border hover:border-primary/50 transition-colors">
               <div className="text-3xl mb-3">🗺️</div>
               <h3 className="font-semibold mb-2">Map Intelligence</h3>
@@ -105,7 +112,6 @@ export const EVChatbot = () => {
               </p>
             </div>
           </div>
-
           {/* Example Prompts */}
           <div className="bg-card p-8 rounded-lg border text-left space-y-4">
             <h2 className="text-2xl font-bold mb-4">Try asking:</h2>
@@ -134,6 +140,7 @@ export const EVChatbot = () => {
           </div>
         </div>
       </div>
+
 
       {/* Chat Section */}
       <div className="flex-1 flex flex-col">
