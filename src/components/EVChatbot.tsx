@@ -14,7 +14,7 @@ export const EVChatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Hello! I\'m your EV Charging Site Selection AI assistant. I can help you:\n\n• Recommend optimal locations for new charging stations\n• Calculate ROI and investment estimates\n• Analyze districts and POI density\n• Explain the KNN prediction workflow\n\nAsk me anything about EV charging site selection in Shenzhen!',
+      content: 'Hello! I\'m your EV Charging Site Selection AI assistant.\n\nAsk me anything about EV charging site selection in Shenzhen!',
     },
   ]);
   const [input, setInput] = useState('');
@@ -68,9 +68,69 @@ export const EVChatbot = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full bg-background">
-      <div className="flex-1 flex items-center justify-center">
-        <ScrollArea className="w-full max-w-2xl p-6">
-          <div className="space-y-4">
+      {/* Header Section */}
+      <div className="w-full py-12 px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Feature Cards */}
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-lg bg-card border hover:border-primary/50 transition-colors">
+              <div className="text-3xl mb-3">📍</div>
+              <h3 className="font-semibold mb-2">Site Recommendations</h3>
+              <p className="text-sm text-muted-foreground">
+                Get AI-powered location suggestions based on KNN modeling and district analysis
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg bg-card border hover:border-primary/50 transition-colors">
+              <div className="text-3xl mb-3">💰</div>
+              <h3 className="font-semibold mb-2">ROI Analysis</h3>
+              <p className="text-sm text-muted-foreground">
+                Calculate investment costs and months to break-even for any location
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg bg-card border hover:border-primary/50 transition-colors">
+              <div className="text-3xl mb-3">🗺️</div>
+              <h3 className="font-semibold mb-2">Map Intelligence</h3>
+              <p className="text-sm text-muted-foreground">
+                Analyze existing sites (blue) and POIs (yellow) across Shenzhen's 10 districts
+              </p>
+            </div>
+          </div>
+
+          {/* Example Prompts */}
+          <div className="bg-card p-8 rounded-lg border text-left space-y-4">
+            <h2 className="text-2xl font-bold mb-4">Try asking:</h2>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                <span>"Recommend me a new site with high potential and explain why you chose that location"</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                <span>"What is the average ROI for a 2,000,000 RMB investment in Bao'an district?"</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                <span>"Explain the 9-step workflow for selecting a new charging station site"</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                <span>"Which districts are most underserved for EV charging stations?"</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                <span>"Compare DC_fast vs Ultra_fast chargers for a commercial district"</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Chat Section */}
+      <div className="flex-1 flex flex-col">
+        <ScrollArea className="flex-1 w-full max-w-4xl mx-auto px-6">
+          <div className="space-y-4 py-6">
             {messages.map((message, index) => (
               <div
                 key={index}
@@ -113,11 +173,13 @@ export const EVChatbot = () => {
                 </div>
               </div>
             )}
-          </div>
-        </ScrollArea>
-      </div>
-      <div className="p-6 border-t bg-background">
-        <div className="flex gap-2 max-w-4xl mx-auto">
+            </div>
+          </ScrollArea>
+        </div>
+        
+        {/* Input Section */}
+        <div className="p-6 border-t bg-background">
+          <div className="flex gap-2 max-w-4xl mx-auto">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
