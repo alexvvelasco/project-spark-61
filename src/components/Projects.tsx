@@ -77,7 +77,7 @@ const Projects = () => (
       {/* Second Project */}
       <div className="border rounded-lg p-4 shadow">
         <h3 className="text-xl font-semibold mb-2"> Anomaly Detection | AI-driven Predictive Maintenance System</h3>
-        <p className="mb-1"><strong>Role:</strong> Sole contributor</p>
+        <p className="mb-1"><strong>Role:</strong> Group Project, Project Manager</p>
         <p className="mb-1"><strong>Description:</strong></p>
         <p className="mb-1">
           · Developed an AI-driven predictive maintenance system for industrial machines.
