@@ -60,14 +60,12 @@ const PersonalProjects = () => {
               ))}
             </div>
             <div className="mt-4 flex space-x-4">
-              <a
-                href={personalProjects[0].streamlit}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/ev-chatbot"
                 className="text-red-600 underline"
               >
                 Interactive Demo Website
-              </a>
+              </Link>
               <a
                 href={personalProjects[0].github}
                 target="_blank"
