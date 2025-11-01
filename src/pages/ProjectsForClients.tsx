@@ -1,6 +1,8 @@
 import { myProjects } from "../data/myProjects";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const ProjectsForClients = () => {
   const clientProjects = [myProjects[2], myProjects[3]]; // Hospital & Stock projects
@@ -9,6 +11,10 @@ const ProjectsForClients = () => {
     <>
       <Header />
       <section className="container mx-auto py-8 px-4">
+        <Link to="/" className="inline-flex items-center gap-2 mb-6 text-foreground hover:text-primary transition-colors">
+          <ArrowLeft size={20} />
+          <span>Back to Home</span>
+        </Link>
         <h2 className="text-3xl font-bold mb-6">Projects for Clients</h2>
         <div className="grid gap-8 md:grid-cols-1">
           {/* Data Analysis, KPI & Power BI Dashboard */}
