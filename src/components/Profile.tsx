@@ -20,12 +20,24 @@ const Profile = () => (
           <FaGithub size={32} />
         </a>
       </div>
-      {/* Add this button */}
-      <a href="#projects">
-        <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">
-          View My Projects
-        </button>
-      </a>
+      {/* Navigation Buttons */}
+      <div className="flex justify-center space-x-4 mt-4">
+        <a href="/current-employment">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">
+            Current Employment
+          </button>
+        </a>
+        <a href="/projects-for-clients">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">
+            Client Projects
+          </button>
+        </a>
+        <a href="/personal-projects">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">
+            Personal Projects
+          </button>
+        </a>
+      </div>
     </div>
     <div className="mt-8">
       <h2 className="text-3xl font-bold mb-2 text-left">Skills</h2>

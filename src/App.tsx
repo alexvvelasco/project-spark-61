@@ -10,6 +10,9 @@ import PostProject from "./pages/PostProject";
 import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 import EVChatbotPage from "./pages/EVChatbotPage";
+import PersonalProjects from "./pages/PersonalProjects";
+import ProjectsForClients from "./pages/ProjectsForClients";
+import CurrentEmployment from "./pages/CurrentEmployment";
 import Chatbot from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -27,6 +30,9 @@ const AppContent = () => {
         <Route path="/post-project" element={<PostProject />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/ev-chatbot" element={<EVChatbotPage />} />
+        <Route path="/current-employment" element={<CurrentEmployment />} />
+        <Route path="/projects-for-clients" element={<ProjectsForClients />} />
+        <Route path="/personal-projects" element={<PersonalProjects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {!isEVChatbotPage && <Chatbot />}
