@@ -11,39 +11,16 @@ const CurrentEmployment = () => {
           <ArrowLeft size={20} />
           <span>Back to Home</span>
         </Link>
-        <h2 className="text-3xl font-bold mb-6">Work History</h2>
+        <h2 className="text-3xl font-bold mb-6">Current Positions</h2>
         <div className="grid gap-8 md:grid-cols-1">
-          {/* Add your employment history here */}
           <div className="border rounded-lg p-6 shadow">
-            <h3 className="text-2xl font-semibold mb-2">Data Scientist</h3>
-            <p className="text-lg font-medium mb-1">Company Name</p>
-            <p className="text-sm text-muted-foreground mb-4">Location - Nov 2025 - present</p>
+            <h3 className="text-2xl font-semibold mb-2">Analytics and Data Automation Engineer</h3>
+            <p className="text-lg font-medium mb-1">Nickelsen Consulting</p>
+            <p className="text-sm text-muted-foreground mb-4">Arizona, US | Nov 2025 - present</p>
             <ul className="list-disc list-inside space-y-2">
-              <li>Job description point 1</li>
-              <li>Job description point 2</li>
-              <li>Job description point 3</li>
-            </ul>
-          </div>
-
-          <div className="border rounded-lg p-6 shadow">
-            <h3 className="text-2xl font-semibold mb-2">Machine Learning Engineer</h3>
-            <p className="text-lg font-medium mb-1">Previous Company</p>
-            <p className="text-sm text-muted-foreground mb-4">Location - Jan 2024 - Oct 2025</p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Job description point 1</li>
-              <li>Job description point 2</li>
-              <li>Job description point 3</li>
-            </ul>
-          </div>
-
-          <div className="border rounded-lg p-6 shadow">
-            <h3 className="text-2xl font-semibold mb-2">Data Analyst</h3>
-            <p className="text-lg font-medium mb-1">Earlier Company</p>
-            <p className="text-sm text-muted-foreground mb-4">Location - Jun 2022 - Dec 2023</p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Job description point 1</li>
-              <li>Job description point 2</li>
-              <li>Job description point 3</li>
+              <li>Responsible for end-to-end analytics engineering on builders' data—ingesting, cleansing, transforming, and publishing reliable, analysis-ready datasets to drive decisions.</li>
+              <li>Automate scalable ELT/ETL pipelines and reusable functions with testing, documentation, and scheduled orchestration for repeatable, trustworthy insights.</li>
+              <li>Partner with stakeholders to surface actionable patterns and deliver maintainable data products with clear lineage, observability, and SLAs.</li>
             </ul>
           </div>
         </div>
