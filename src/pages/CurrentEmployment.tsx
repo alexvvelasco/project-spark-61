@@ -23,6 +23,24 @@ const CurrentEmployment = () => {
               <li>Partner with stakeholders to surface actionable patterns and deliver maintainable data products with clear lineage, observability, and SLAs.</li>
             </ul>
           </div>
+          
+          <div className="border rounded-lg p-6 shadow">
+            <h3 className="text-2xl font-semibold mb-2">Data Scientist</h3>
+            <p className="text-lg font-medium mb-1">Aon Data</p>
+            <p className="text-sm text-muted-foreground mb-4">Thailand | Sept 2025 - present</p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>AI car speech voice learning - audio recording English and Spanish</li>
+            </ul>
+          </div>
+          
+          <div className="border rounded-lg p-6 shadow">
+            <h3 className="text-2xl font-semibold mb-2">Data Entry</h3>
+            <p className="text-lg font-medium mb-1">Tržiště práce s.r.o.</p>
+            <p className="text-sm text-muted-foreground mb-4">Prague, CZ | Sept - present</p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Curate Places of Interest in mapping services - create missing places in Google Maps using the data provided</li>
+            </ul>
+          </div>
         </div>
       </section>
     </>
