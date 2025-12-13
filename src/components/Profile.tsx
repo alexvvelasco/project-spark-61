@@ -6,6 +6,10 @@ const Profile = () => (
     <div className="text-center">
       <img src={presentationImg} className="mx-auto rounded-full w-32 h-32 mb-4" />
       <h1 className="text-3xl font-bold mb-4">Alejandro Velasco | Data Scientist - ML Engineer & AI Engineer</h1>
+      <div className="mb-4">
+        <span className="text-3xl font-bold mb-4 align-middle">Founder of </span>
+        <a href="https://intell-ia.com" target="_blank" rel="noopener noreferrer" className="font-display font-bold gradient-text intellia align-middle">INTELLIA</a>
+      </div>
       <p className="text-lg mb-8">
         Transitioned from 6 yrs in Hospitality Ops to Data-Driven Problem Solving
         - Experience in Human Flow & Efficiency Analytics
