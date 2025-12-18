@@ -4,7 +4,7 @@ import presentationImg from "./presentationimage.jpeg";
 const Profile = () => (
   <section className="container mx-auto py-8 px-4">
     <div className="text-center">
-      <img src={presentationImg} className="mx-auto rounded-full w-32 h-32 mb-4" />
+      <img src={presentationImg} className="mx-auto rounded-full w-32 h-32 mb-4 object-cover border-4 border-primary/20 shadow-lg" alt="Alejandro Velasco" />
       <h1 className="text-3xl font-bold mb-4">Alejandro Velasco | Data Scientist - ML Engineer & AI Engineer</h1>
       <div className="mb-4">
         <span className="text-3xl font-bold mb-4 align-middle">Founder of </span>
